@@ -1,17 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Threading;
 using Lesta_Blitz_Cluster_Selector.Models;
-using Lesta_Blitz_Cluster_Selector.Utils;
 using Lesta_Blitz_Cluster_Selector.Utils.WinForms;
 
 namespace Lesta_Blitz_Cluster_Selector
@@ -24,7 +16,7 @@ namespace Lesta_Blitz_Cluster_Selector
             InitializeClustersCheckedListBox();
         }
 
-        private void DeveloperLinkLabel_Click(object sender, EventArgs e) => Process.Start("https://vk.com/mrairobot");
+        private void DeveloperLinkLabel_Click(object sender, EventArgs e) => Process.Start("https://vk.com/headroomov");
 
         private void InitializeClustersCheckedListBox()
         {
@@ -40,7 +32,7 @@ namespace Lesta_Blitz_Cluster_Selector
                     return;
                 }
 
-                this.InvokeAction(() => 
+                this.InvokeAction(() =>
                 {
                     ClustersCheckedListBox.Items.Clear();
 

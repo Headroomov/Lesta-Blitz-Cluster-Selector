@@ -39,20 +39,22 @@
             this.DeveloperLinkLabel.AutoSize = true;
             this.DeveloperLinkLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeveloperLinkLabel.ForeColor = System.Drawing.Color.Silver;
-            this.DeveloperLinkLabel.Location = new System.Drawing.Point(10, 228);
+            this.DeveloperLinkLabel.Location = new System.Drawing.Point(13, 281);
+            this.DeveloperLinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DeveloperLinkLabel.Name = "DeveloperLinkLabel";
-            this.DeveloperLinkLabel.Size = new System.Drawing.Size(138, 13);
+            this.DeveloperLinkLabel.Size = new System.Drawing.Size(194, 19);
             this.DeveloperLinkLabel.TabIndex = 1;
-            this.DeveloperLinkLabel.Text = "Разработано MrAIRobot";
+            this.DeveloperLinkLabel.Text = "Разработано Headroomov";
             this.DeveloperLinkLabel.Click += new System.EventHandler(this.DeveloperLinkLabel_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 21);
+            this.label1.Size = new System.Drawing.Size(182, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Выбрать кластеры:";
             // 
@@ -60,22 +62,24 @@
             // 
             this.ClustersCheckedListBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ClustersCheckedListBox.FormattingEnabled = true;
-            this.ClustersCheckedListBox.Location = new System.Drawing.Point(17, 38);
+            this.ClustersCheckedListBox.Location = new System.Drawing.Point(23, 47);
+            this.ClustersCheckedListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClustersCheckedListBox.Name = "ClustersCheckedListBox";
-            this.ClustersCheckedListBox.Size = new System.Drawing.Size(361, 164);
+            this.ClustersCheckedListBox.Size = new System.Drawing.Size(480, 196);
             this.ClustersCheckedListBox.TabIndex = 3;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(390, 250);
+            this.ClientSize = new System.Drawing.Size(520, 308);
             this.Controls.Add(this.ClustersCheckedListBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DeveloperLinkLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

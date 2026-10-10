@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Lesta_Blitz_Cluster_Selector.Utils;
 
 namespace Lesta_Blitz_Cluster_Selector.Models
@@ -16,7 +11,7 @@ namespace Lesta_Blitz_Cluster_Selector.Models
         {
             ClustersAddresses = new Dictionary<string, bool>();
 
-            if(TryUpdateClustersAddresses() == false)
+            if (TryUpdateClustersAddresses() == false)
                 return false;
 
             return true;
@@ -24,7 +19,7 @@ namespace Lesta_Blitz_Cluster_Selector.Models
 
         public static bool TryBlockCluster(string address)
         {
-            if(ClustersAddresses.ContainsKey(address) == false)
+            if (ClustersAddresses.ContainsKey(address) == false)
                 return false;
 
             if (ClustersAddresses[address] == true)
@@ -67,7 +62,7 @@ namespace Lesta_Blitz_Cluster_Selector.Models
                     continue;
 
                 ClustersAddresses.Add(address, Firewall.IsOutTcpConnectionRuleExists(address));
-            } 
+            }
 
             return true;
         }
